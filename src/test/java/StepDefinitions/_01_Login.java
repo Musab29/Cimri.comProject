@@ -18,14 +18,17 @@ public class _01_Login {
     }
 
     @When("Enter username and password and click login button")
-    public void enterUsernameAndPasswordAndClickLoginButton() {
+    public void enterUsernameAndPasswordAndClickLoginButton() throws InterruptedException {
+        Thread.sleep(1000);
         dc.email.sendKeys("eyp.mermer2007@gmail.com");
         dc.password.sendKeys("Musab2934");
     }
 
     @Then("User should login successfully")
-    public void userShouldLoginSuccessfully() {
+    public void userShouldLoginSuccessfully() throws InterruptedException {
         dc.loginButton.click();
+        Thread.sleep(1000);
+
 
     }
 

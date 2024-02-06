@@ -22,15 +22,26 @@ public class DialogContent {
 
     @FindBy(css = "input[id='password']")
     public WebElement password;
-    @FindBy(css = "span[class='sc-eCApnc iylGhi']")
+    @FindBy(css = "button[class='sc-iCoGMd juPwmI']")
     public WebElement loginButton;
 
 
 //    @FindBy(xpath = "(//span[text()='Setup'])[1]")
 //    public WebElement setup;
 
-    @FindBy(css = "div[class='Header_headerWrapper__iwyXB']  button")
+    @FindBy(xpath = "//i[@class='cimri-icon-brochures']")
     public WebElement brochures;
+
+    @FindBy(xpath = "//div[@class='menuCategoryItemTitle'][1]")
+    public WebElement elektironik;
+    @FindBy(xpath = "//i[@class='cimri-icon-sale-discount-promotion']")
+    public WebElement fiyatd;
+
+    @FindBy(xpath = "//div[@class='s1sb4ezy-4 kuQspK']")
+    public WebElement kategoriler;
+
+
+
 
 
 }
